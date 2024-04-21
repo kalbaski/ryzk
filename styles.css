@@ -1,0 +1,471 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+header{
+    height: 573px;
+    width: 100%;
+    background-color: #88D4FF;
+}
+
+.header-container{
+    width: 100%;
+    height: 70px;
+    background-color: #3586FF;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 95%; 
+}
+
+.container{
+    max-width: 90%;
+    margin: auto;
+    height: 95%; 
+}
+
+.container a:hover {
+    background-color: #0056b3;
+}
+
+.header-container a{
+    text-decoration: none;
+    font-size: 48px;
+    color: #fff;
+    width: 400px;
+    text-align: center;
+    height: 60px;
+    background-color: #74BCFF;
+    transition: background-color 0.3s ease;
+}
+
+.mat-container{
+    display: flex;
+    max-width: 55%;
+    margin: auto;
+}
+
+.text-container{
+    align-items: center;
+    font-size: 100px;
+    color: #fff;
+    text-align: right;
+    margin-left: auto;
+    margin-top: 20px;
+}
+
+.blue{
+    color: blue;
+}
+
+.red{
+    color: red;
+}
+
+.container p{
+    font-size: 48px;
+    color: #fff;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 96px;
+    margin: 30px 0 10px;
+}
+
+main{
+    max-width: 80%;
+    margin: auto;
+}
+
+main p{
+    font-size: 48px;
+    padding: 20px 0 0 0 ;
+}
+
+
+.flag-left, .flag-right {
+    height: 370vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2%;
+    
+}
+
+header img{
+    width: 470px;
+    height: 503px;
+}
+
+.blue{
+    color: blue;
+}
+
+.red{
+    color: red;
+}
+
+.flag-left {
+
+    left: 10px;
+    border-left: 1px solid black;
+    background: linear-gradient(to right, #FFFFFF 0%, #FFFFFF 33.33%, #0052A5 33.33%, #0052A5 66.66%, #D52B1E 66.66%, #D52B1E 100%);
+}
+
+.flag-right {
+
+    right: 10px;
+    border-right: 1px solid black;
+    background: linear-gradient(to right, #D52B1E 0%, #D52B1E 33.33%, #0052A5 33.33%, #0052A5 66.66%, #FFFFFF 66.66%, #FFFFFF 100%);
+}
+
+main img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    height: 525px;
+    margin-top: 70px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    display: none; /* Initially hidden */
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    width: 410px;
+    height: 230px;
+    border-radius: 10px;
+    max-width: 80%; /* Adjust as needed */
+}
+
+.close-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+}
+
+.contact-container{
+    text-align: center;
+    font-size: 25px;
+}
+
+.Telegram, .vk, .whatsapp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    max-width: 92%;
+    margin: 50px auto 0;
+    text-align: center;
+    font-size: 48px;
+}
+
+.here{
+    color: #00B2FF;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    z-index: 1000; 
+    top: 20px;
+}
+.responsive-text{
+    display: none;
+}
+
+.menu-item {
+    display: none; /* Скрываем элементы по умолчанию */
+}
+
+.burger-menu span {
+    height: 2px;
+    width: 25px;
+    background: black;
+    margin: 5px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1750px){
+    .container p{
+        font-size: 30px;
+    }
+
+    .flag-left, .flag-right {
+        height: 413vh;
+      }
+}
+
+@media screen and (max-width: 1450px){
+    .container p{
+        font-size: 30px;
+    }
+
+    .header-container a {
+        font-size: 30px;
+        width: 300px;
+        height: 40px;
+      }
+      .mat-container {
+        display: flex;
+        max-width: 90%;
+        margin: auto;
+      }
+
+      .flag-left, .flag-right {
+        height: 440vh;
+      }
+}
+
+@media screen and (max-width: 1200px){
+    .container p{
+        font-size: 25px;
+    }
+
+    .header-container a {
+        font-size: 26px;
+        width: 225px;
+        height: 35px;
+      }
+      .mat-container {
+        display: flex;
+        max-width: 80%;
+        margin: auto;
+      }
+
+      .text-container {
+    font-size: 80px;
+      }
+
+      header img {
+        width: 430px;
+        height: 403px;
+      }
+
+      header {
+        height: 473px;
+        width: 100%;
+        background-color: #88D4FF;
+      }
+
+      .flag-left, .flag-right {
+        height: 455vh;
+      }
+}
+
+@media screen and (max-width: 960px){
+    .text-container {
+        font-size: 60px;
+      }
+
+      header img {
+        width: 280px;
+        height: 301px;
+      }
+
+      header {
+        height: 371px;
+        width: 100%;
+        background-color: #88D4FF;
+      }
+
+      .container p {
+        font-size: 20px;
+      }
+
+      .header-container a {
+        font-size: 22px;
+        width: 225px;
+        height: 30px;
+      }
+
+      h1 {
+        font-size: 60px;
+      }
+
+}
+
+@media screen and (max-width: 715px){
+    header img {
+        width: 243px;
+        height: 218px;
+      }
+
+      .text-container {
+        font-size: 40px;
+      }
+
+      header{
+        height: 288px;
+      }
+
+      .container p {
+        font-size: 15px;
+      }
+
+      .header-container a {
+        font-size: 18px;
+        width: 225px;
+        height: 25px;
+      }
+
+      .flag-left {
+
+        left: 0px;
+    }
+    
+    .flag-right {
+    
+        right: 0px;
+    }
+
+    .flag-left, .flag-right {
+        width: 4%;
+        
+    }
+}
+
+@media screen and (max-width: 510px){
+
+    header {
+        height: 227px;
+      }
+
+      header img {
+        width: 165px;
+        height: 157px;
+      }
+
+      .mat-container{
+        max-width: 70%;
+      }
+
+      .text-container {
+        font-size: 27px;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+
+      main p{
+        font-size: 16px;
+      }
+
+      main img {
+        width: 260px;
+        height: 300px;
+      }
+
+        .text {
+            font-size: 17px;
+        }
+
+        .header-container a{
+            font-size: 17px;
+        }
+}
+
+@media screen and (max-width: 450px){
+    main p {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    main img {
+    width: 230px;
+    height: 260px;
+    }
+
+    .text{
+        font-size: 20px;
+    }
+
+    .flag-left, .flag-right {
+        height: 190vh;
+    }
+
+    .contact-container {
+        font-size: 15px;
+    }
+
+    .text-container {
+        font-size: 25px;
+      }
+
+      header img {
+        width: 154px;
+        height: 143px;
+      }
+
+      header {
+        height: 213px;
+      }
+
+      .burger-menu {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        text-align: center;
+        right: 0;
+        top: 50px;
+        width: 100%;
+        height: 300px;
+        background-color: wheat;
+        z-index: 100;
+        position: absolute;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    .nav-links.active a {
+        display: block;
+    }
+
+    .nav-links .hide-mobile {
+        display: none;
+    }
+
+    .responsive-text {
+        display: block;
+        padding: 25px 35px 0 0px;
+      }
+
+}
+
+
+
